@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+## Frontend Assignment - Countdown Timer Documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 1. Introduction
+The Frontend Assignment - Countdown Timer is a web application that enables users to set a specific date and time, after which the application displays a countdown timer. Users can interact with the timer by cancelling it or setting a new countdown.
 
-## Available Scripts
+### 2. Features
+- User-friendly input for setting the target date and time.
+- Real-time countdown display.
+- Ability to cancel or create a new countdown at any time.
+- Responsive design for seamless experience across various screen sizes.
+- Optional sound notification upon countdown completion.
+- Optional persistence of countdown even if the browser tab is reopened.
 
-In the project directory, you can run:
+### 3. User Stories
+- **Inputting Target Date and Time**: Users can easily input the target date and time for the countdown.
+- **Real-time Countdown Display**: Users can see the countdown timer displayed in an intuitive format.
+- **Responsive Design**: Users can access the application across different devices with ease.
 
-### `npm start`
+### 4. Functional Requirements
+#### 4.1 Input Form
+- Provide a form for users to input the target date and time.
+- Validate the input to ensure it is in a valid date and time format.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### 4.2 Countdown Timer
+- Display the countdown timer in a visually appealing format.
+- Update the countdown timer in real-time to reflect the remaining time.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### 4.3 Cancel / Stop Countdown Timer
+- Allow users to stop the countdown timer at any point.
 
-### `npm test`
+#### 4.4 Validations
+- Ensure countdown limits: 
+  - Maximum days: 99 days
+  - Maximum hours: 23 hours
+  - Maximum minutes: 59 minutes
+  - Maximum seconds: 59 seconds
+- Set cut-off date for date picker: 99 days from the current date.
+- Ensure countdown timer does not go below 0.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### 4.5 Responsive Design
+- Make the application responsive and compatible with various devices.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 5. Technologies
+- **Frontend**: HTML, CSS, JavaScript, React
+- **React App Setup**: 
+  - Use `create-react-app` to initialize the project.
+  - Start the React app using `npm start`.
+- **Installing Node Dependencies**: After cloning the repository, run `npm install` to install necessary dependencies.
+- **Important Notes**: 
+  - Ensure Node.js is installed on your system.
+  - Refer to the documentation of each technology for further guidance.
