@@ -1,4 +1,4 @@
-import Styles from "./CountdownTimer.css";
+import Styles from "./CountdownTimer.module.css";
 
 const CountdownTimer = ({ countdownDateTime }) => {
   return (
