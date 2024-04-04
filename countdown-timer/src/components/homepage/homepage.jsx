@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import CountdownTimer from "./countdown-timer/CountdownTimer";
-import InputForm from "./input-form/InputForm";
-import "./Homepage.css";
+import CountdownTimer from "../countdown-timer/CountdownTimer";
+import InputForm from "../input-form/InputForm";
+import "./homepage.css";
 
 const Homepage = () => {
   const [isCountdownActive, setIsCountdownActive] = useState(false);
