@@ -1,31 +1,31 @@
-import Styles from "./CountdownTimer.module.css";
+import  "./CountdownTimer.css";
 
 const CountdownTimer = ({ countdownDateTime }) => {
   return (
     <>
       {!(countdownDateTime.message.length > 0) ? (
         <div>
-          <div className={Styles.countdownWrapper}>
-            <div className={Styles.countdownBox}>
+          <div className="countdownWrapper">
+            <div className="countdownBox">
               {countdownDateTime.days}
-              <span className={Styles.legend}>Days</span>
+              <span className="legend">Days</span>
             </div>
-            <div className={Styles.countdownBox}>
+            <div className="countdownBox">
               {countdownDateTime.hours}
-              <span className={Styles.legend}>Hours</span>
+              <span className="legend">Hours</span>
             </div>
-            <div className={Styles.countdownBox}>
+            <div className="countdownBox">
               {countdownDateTime.minutes}
-              <span className={Styles.legend}>Minutes</span>
+              <span className="legend">Minutes</span>
             </div>
-            <div className={Styles.countdownBox}>
+            <div className="countdownBox">
               {countdownDateTime.seconds}
-              <span className={Styles.legend}>Seconds</span>
+              <span className="legend">Seconds</span>
             </div>
           </div>
         </div>
       ) : (
-        <div className={Styles.highlight}>
+        <div className="highlight">
           {countdownDateTime.message}
         </div>
       )}

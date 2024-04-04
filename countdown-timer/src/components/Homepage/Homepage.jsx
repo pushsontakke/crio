@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import CountdownTimer from "../CountdownTimer/CountdownTimer";
 import InputForm from "../InputForm/InputForm";
-import Styles from "./Homepage.module.css";
+import "./Homepage.css";
 
 const Homepage = () => {
   // const [targetDateTime, setTargetDateTime] = useState("default");
@@ -83,9 +83,9 @@ const Homepage = () => {
   };
 
   return (
-    <div className={Styles.Homepage}>
+    <div className="Homepage">
       <h1 className="header">
-        Countdown <span className={Styles.highlight}>Timer</span>
+        Countdown <span className="highlight">Timer</span>
       </h1>
       <InputForm
         onDateSelect={handleDateSelect}

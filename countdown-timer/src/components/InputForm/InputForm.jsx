@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Styles from "./InputForm.module.css";
+import "./InputForm.css";
 
 const InputForm = ({ onDateSelect, onCancel, isCountdownActive }) => {
   const [dateTime, setDateTime] = useState("");
@@ -10,21 +10,21 @@ const InputForm = ({ onDateSelect, onCancel, isCountdownActive }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className={Styles.formComtainer}>
+    <form onSubmit={handleSubmit} className="formComtainer">
       <input
         type="datetime-local"
         value={dateTime}
         onChange={(e) => setDateTime(e.target.value)}
         required
-        className={Styles.InputField}
+        className="InputField"
       />
       {!isCountdownActive && (
-        <button type="submit" className={Styles.button}>
+        <button type="submit" className="button">
           Start Timer
         </button>
       )}
       {isCountdownActive && (
-        <button type="button" onClick={onCancel} className={Styles.button}>
+        <button type="button" onClick={onCancel} className="button">
           Cancel Timer
         </button>
       )}
