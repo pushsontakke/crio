@@ -3,7 +3,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      Expense Tracker
+      <h1>Expense Tracker</h1>
     </div>
   );
 }
