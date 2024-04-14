@@ -1,4 +1,6 @@
 import { useState } from "react";
+import WalletExpenses from "../WalletExpenses/WalletExpenses";
+import ExpenseTable from "../ExpenseTable/ExpenseTable";
 import LinebarChart from "../LinebarChart/LinebarChart";
 import "./Dashboard.css";
 
@@ -41,8 +43,26 @@ const Dashboard = () => {
   ];
 
   return (
-    <div>
-      <LinebarChart data={expenses} category={categories} />
+    <div className="dashboard-container">
+      <WalletExpenses
+        handleExpenseListUpdate={handleExpensesListUpdate}
+        categories={categories}
+        expenses={expenses}
+        setExpenses={setExpenses}
+        getTotalExpenses={getTotalExpenses}
+        walletBalance={walletBalance}
+        setWalletBalance={setWalletBalance}
+      />
+      {expenses.length > 0 && (
+        <div className="dashboard-info-container">
+          <ExpenseTable
+            expenseData={expenses}
+            handleExpenseListUpdate={handleExpensesListUpdate}
+            categories={categories}
+          />
+          <LinebarChart data={expenses} categories={categories} />
+        </div>
+      )}
     </div>
   );
 };

@@ -3,6 +3,8 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  background: #28b0ff;
+  color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
