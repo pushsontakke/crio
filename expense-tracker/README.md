@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+**Expense Tracker Documentation**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live link: [Expense Tracker](https://crio-mu.vercel.app/)
 
-## Available Scripts
+GitHub link: [Expense Tracker Repository](https://github.com/pushsontakke/crio/tree/master/expense-tracker)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+**Introduction**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Expense Tracker web application is designed to help users manage their expenses effectively. It allows users to track their expenses by adding, editing, and deleting them based on categories and dates. Additionally, users can view a summary of their expenses, manage their wallet balance, and visualize expense trends through charts.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+**Features**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Wallet Balance**: Users have a default wallet balance set to $5000, which can be increased. The application ensures that users cannot spend more than their available wallet balance and displays an alert if they attempt to do so.
 
-### `npm run build`
+2. **Add, Edit, and Delete Expenses**: Users can add new expenses with details such as title, amount, category, and date. They can also edit or delete existing expenses.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Summary View**: Users can view a summary of their total expenses, categorized either by date or type, through a pie chart.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. **Expense Trends**: The application provides a bar chart that shows the trending spends based on expense categories.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. **Persistence**: Wallet balance and the list of expenses are stored in the browser's localStorage, ensuring that they persist even after page refresh.
 
-### `npm run eject`
+6. **Responsive Design**: The application is designed to be usable on different devices, ensuring a seamless user experience across various screen sizes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Functional Requirements**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Add Expense Form**: Provides fields for title, amount, and date with validation for required fields.
+   
+2. **Add Income Form**: Allows users to increase their wallet balance.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Expense List**: Displays a list of expenses with options to edit or delete each expense.
 
-## Learn More
+4. **Expense Summary**: Shows a summary of total expenses in a pie chart.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. **Expense Trends**: Displays a bar chart showing trending spending based on category.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+6. **Edit/Delete**: Allows users to edit or delete expenses.
 
-### Code Splitting
+7. **Responsive Design**: Ensures usability on different devices.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+**Technologies Used**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Frontend**: React.js, HTML, CSS, JavaScript.
+- **Third-Party Libraries**: Recharts for charts, react-modal for modals, notistack for alerts, react-icons for icons.
+- **Styling**: Plain CSS was used, avoiding the use of third-party libraries for CSS styling.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Additional Pointers**
 
-### Advanced Configuration
+- **Reusable Components**: The application uses reusable components for UI elements, promoting code reusability and maintainability.
+  
+- **Code Quality**: The codebase adheres to high standards of quality, readability, and consistency, ensuring maintainability and ease of understanding for future development.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Design Alignment**: The design of the application aligns with the provided fonts and color scheme, ensuring visual consistency.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+*This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).*
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Cloning and Running the Application**
+
+To clone the repository and run the Expense Tracker application locally, follow these steps:
+
+1. Clone the repository from GitHub:
+   ```
+   git clone https://github.com/pushsontakke/crio.git
+   ```
+
+2. Navigate to the Expense Tracker directory:
+   ```
+   cd crio/expense-tracker
+   ```
+
+3. Install dependencies using npm or yarn:
+   ```
+   npm install
+   ```
+   or
+   ```
+   yarn install
+   ```
+
+4. Start the application:
+   ```
+   npm start
+   ```
+   or
+   ```
+   yarn start
+   ```
+
+5. The application will start running on `http://localhost:3000` in your default web browser.
+
+---
