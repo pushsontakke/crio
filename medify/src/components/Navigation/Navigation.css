@@ -2,7 +2,10 @@
     display: flex;
     justify-content: space-between;
     margin: 2% 10% 2% 10%;
-    /* background-color: rgb(202, 202, 202); */
+}
+
+.Navigation:first-child{
+    margin-left: auto;
 }
 
 .logo {
@@ -10,7 +13,6 @@
     height: 27px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
 }
 
 .logo>span {
@@ -18,13 +20,13 @@
     font-weight: 700;
     font-size: 18px;
     color: #2AA8FF;
+    margin: 0 4px;
 }
 
 .Navbar {
     list-style: none;
     display: flex;
     height: 40px;
-    margin-left: 12em;
 }
 
 .Navbar-items {
@@ -45,4 +47,6 @@
     font-size: 14px;
     line-height: 21px;
     width: 130px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 1rem;
 }
