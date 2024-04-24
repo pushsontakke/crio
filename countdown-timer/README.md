@@ -50,3 +50,40 @@ The Frontend Assignment - Countdown Timer is a web application that enables user
 - **Important Notes**: 
   - Ensure Node.js is installed on your system.
   - Refer to the documentation of each technology for further guidance.
+
+
+
+*This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).*
+
+
+**Cloning and Running the Application**
+
+To clone the repository and run the Expense Tracker application locally, follow these steps:
+
+1. Clone the repository from GitHub:
+   ```
+   git clone https://github.com/pushsontakke/crio.git
+   ```
+
+2. Navigate to the countdown-timer directory:
+   ```
+   cd crio/countdown-timer
+   ```
+
+3. Install dependencies using npm or yarn:
+   ```
+   npm install
+   ```
+   or
+   ```
+   yarn install
+   ```
+
+4. Start the application:
+   ```
+   npm start
+   ```
+   or
+   ```
+   yarn start
+   ```
