@@ -4,15 +4,12 @@
     margin: 2% 10% 2% 10%;
 }
 
-.Navigation:first-child{
-    margin-left: auto;
-}
-
 .logo {
     width: 92px;
     height: 27px;
-    margin: auto;
+    margin: auto 0;
     display: flex;
+    text-decoration: none;
 }
 
 .logo>span {
@@ -26,11 +23,12 @@
 .Navbar {
     list-style: none;
     display: flex;
+    justify-content: space-between;
     height: 40px;
+    min-width: 60vw;
 }
 
 .Navbar-items {
-    margin: 0 1em;
     font-size: 14px;
 }
 
@@ -48,5 +46,4 @@
     line-height: 21px;
     width: 130px;
     font-family: "Poppins", sans-serif;
-    margin-left: 1rem;
 }

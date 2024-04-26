@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    
+}
+.DoctorsImg{
+    width: 100%;
+    height: 100%;
+}
+
+.left-section{
+    margin: 10%;
+}
+
+.left-section > .sub-headline{
+    font-weight: 500;
+}
+
+.right-section{
+    /* margin-right: auto; */
+}

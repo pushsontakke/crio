@@ -1,36 +1,40 @@
 import logoImage from "../../assets/medify-logo.svg";
+import { NavLink } from "react-router-dom";
 import "./Navigation.css";
 
 const Navigation = () => {
   return (
     <div className="Navigation">
-      <div className="logo">
+      <NavLink to="/" exact className="logo">
         <img src={logoImage} alt="LogoIcon" />
         <span>Medify</span>
-      </div>
+      </NavLink>
       <nav className="Navbar">
         <li className="Navbar-items">
-          <a href="#">Find Doctors</a>
+          <NavLink to="/findDoctors">Find Doctors</NavLink>
         </li>
         <li className="Navbar-items">
-          <a href="#">Hospitals</a>
+          <NavLink to="/hospitals">Hospitals</NavLink>
         </li>
         <li className="Navbar-items">
-          <a href="#">Medicines</a>
+          <NavLink to="/medicines">Medicines</NavLink>
         </li>
         <li className="Navbar-items">
-          <a href="#">Surgeries</a>
+          <NavLink to="/surgeries">Surgeries</NavLink>
         </li>
         <li className="Navbar-items">
-          <a href="#">Software Provider</a>
+          <NavLink to="/softwareProvider">Software Provider</NavLink>
         </li>
         <li className="Navbar-items">
-          <a href="#">Facilities</a>
+          <NavLink to="/facilities">Facilities</NavLink>
         </li>
+        <button
+          onClick={() => console.log("My Bookings")}
+          className="bookingBtn"
+        >
+          My Bookings
+        </button>
       </nav>
-      <button onClick={() => console.log("My Bookings")} className="bookingBtn">
-        My Bookings
-      </button>
     </div>
   );
 };
