@@ -12,3 +12,17 @@ body {
   margin: 0;
   padding: 0;
 }
+
+button {
+  border: 0px #2AA8FF;
+  border-radius: 8px;
+  background-color: #2AA8FF;
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 500;
+  line-height: 21px;
+  width: 130px;
+  height: 40px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}

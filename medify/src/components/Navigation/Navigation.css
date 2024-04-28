@@ -1,7 +1,6 @@
 .Navigation {
     display: flex;
     justify-content: space-between;
-    margin: 2% 10% 2% 10%;
 }
 
 .logo {
@@ -36,14 +35,4 @@
     text-decoration: none;
     line-height: 40px;
     color: black;
-}
-
-.bookingBtn {
-    border: 0px #2AA8FF;
-    border-radius: 8px;
-    background-color: #2AA8FF;
-    font-size: 14px;
-    line-height: 21px;
-    width: 130px;
-    font-family: "Poppins", sans-serif;
 }
