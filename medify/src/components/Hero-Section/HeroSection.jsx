@@ -1,11 +1,10 @@
-// import Navigation from "../Navigation/Navigation";
+import Search from "./Search/Search";
 import DoctorsImg from "../../assets/Doctors.png";
 import "./HeroSection.css";
 
 const Hero = () => {
   return (
     <div className="Hero">
-      {/* <Navigation /> */}
       <div className="container">
         <div className="left-section">
           <div className="headline">
@@ -22,6 +21,7 @@ const Hero = () => {
           <img className="DoctorsImg" src={DoctorsImg} alt="DoctorsImage" />
         </div>
       </div>
+      <Search />
     </div>
   );
 };

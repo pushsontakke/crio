@@ -20,9 +20,23 @@ button {
   font-size: 14px;
   color: #FFFFFF;
   font-weight: 500;
-  line-height: 21px;
+  /* line-height: 21px */
   width: 130px;
   height: 40px;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+  color: #ABB6C7;
+  font-size: 14px;
+  border: none;
+  background: none;
+  height: 50px;
+}
+
+input:focus{
+  outline: none;
+  color: black;
 }
