@@ -8,6 +8,7 @@ import Medicines from "./components/Navigation/pages/Medicines";
 import Surgeries from "./components/Navigation/pages/Surgeries";
 import SoftwareProvider from "./components/Navigation/pages/SoftwareProvider";
 import Facilities from "./components/Navigation/pages/Facilities";
+import Carousel from "./components/Carousel/Carousel";
 import "./App.css";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/facilities" element={<Facilities />} />
           </Routes>
         </Router>
+        <Carousel/>
       </div>
     </>
   );
