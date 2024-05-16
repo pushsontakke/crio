@@ -9,6 +9,7 @@ import Surgeries from "./components/Navigation/pages/Surgeries";
 import SoftwareProvider from "./components/Navigation/pages/SoftwareProvider";
 import Facilities from "./components/Navigation/pages/Facilities";
 import Carousel from "./components/Carousel/Carousel";
+import Specialisation from "./components/Specialisation/Specialisation";
 import "./App.css";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           </Routes>
         </Router>
         <Carousel/>
+        <Specialisation />
       </div>
     </>
   );

@@ -3,6 +3,7 @@ import DoctorsImg from "../../assets/Doctors.png";
 import "./HeroSection.css";
 
 const Hero = () => {
+  
   return (
     <div className="Hero">
       <div className="container">
