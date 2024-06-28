@@ -1,10 +1,9 @@
-import Dentistry from "../../assets/Drugstore.png";
+import Drugstore from "../../assets/Drugstore.png";
 import PrimaryCare from "../../assets/Stethoscope.png";
 import Cardiology from "../../assets/Heart Rate.png";
 import MRIResourse from "../../assets/Heart Rate Monitor.png";
 import BloodTest from "../../assets/Blood Sample.png";
 import Piscology from "../../assets/Immune.png";
-import Laboratory from "../../assets/Drugstore.png";
 import XRay from "../../assets/X-Ray.png";
 import "./Specialisation.css";
 
@@ -17,7 +16,7 @@ const Specialisation = () => {
           onClick={() => console.log("You may be looking for Dentristry")}
           className="category"
         >
-          <img src={Dentistry} alt="Dentistry" />
+          <img src={Drugstore} alt="Dentistry" />
           Dentistry
         </button>
         <button
@@ -61,7 +60,7 @@ const Specialisation = () => {
           onClick={() => console.log("You may be looking for Laboratory")}
           className="category"
         >
-          <img src={Laboratory} alt="Laboratory" />
+          <img src={Drugstore} alt="Laboratory" />
           Laboratory
         </button>
         <button
