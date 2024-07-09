@@ -10,6 +10,9 @@ import SoftwareProvider from "./components/Navigation/pages/SoftwareProvider";
 import Facilities from "./components/Navigation/pages/Facilities";
 import Carousel from "./components/Carousel/Carousel";
 import Specialisation from "./components/Specialisation/Specialisation";
+import Summary from "./components/Summery-Section/Summary";
+import BlogsAndNews from "./components/BlogsAndNews-Section/BlogsAndNews";
+
 import image1 from "./assets/Offer10.png";
 import image2 from "./assets/Offer20.png";
 import DrAhmadKhan from "./assets/Dr Ahmad Khan.png";
@@ -88,6 +91,8 @@ function App() {
           carouselItems="auto"
           carouselHeading="Our Medical Specialist"
         />
+        <Summary />
+        <BlogsAndNews />
       </div>
     </>
   );
